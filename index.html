@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <main class="pager-card">
+        <section class="pager-wrapper" id="pager-wrapper">
+          <h1 class="pager-title">Pager</h1>
+          <p class="display-result .vibrate-1" id="display-result"></p>
+        </section>
+        <section class="phone-wrapper">
+          <h2 class="phone-title">Phone</h2>
+          <p class="user-input" id="user-input"></p>
+          <div class="keypad-container">
+            <div onclick="pressKey(1)" class="key">1</div>
+            <div onclick="pressKey(2)" class="key">2</div>
+            <div onclick="pressKey(3)" class="key">3</div>
+            <div onclick="pressKey(4)" class="key">4</div>
+            <div onclick="pressKey(5)" class="key">5</div>
+            <div onclick="pressKey(6)" class="key">6</div>
+            <div onclick="pressKey(7)" class="key">7</div>
+            <div onclick="pressKey(8)" class="key">8</div>
+            <div onclick="pressKey(9)" class="key">9</div>
+            <div onclick="pressKey('*')" class="key">*</div>
+            <div onclick="pressKey(0)" class="key">0</div>
+            <div onclick="pressKey('#')" class="key">#</div>
+          </div>
+          <div class="button-wrapper">
+            <button class="reset-btn" id="reset-btn">Reset</button>
+            <button class="send-btn" id="send-btn">Send</button>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
